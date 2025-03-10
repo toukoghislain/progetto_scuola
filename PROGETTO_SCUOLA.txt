@@ -1,0 +1,27 @@
+##############################################################
+###################    PROGETTO SCUOLA  ######################
+##############################################################
+
+Obiettivo
+Realizzare un'applicazione web completa utilizzando Spring Boot, con gestione del database e interfaccia utente. Il progetto dovrà includere:
+
+Gestione di un database relazionale per la memorizzazione delle informazioni sugli studenti.
+Un'applicazione Spring Boot con funzionalità di autenticazione (pagina di login).
+Caricamento di un file JSON contenente dati anagrafici degli studenti nel database.
+Struttura dati articolata, con le seguenti entità:
+Studenti (nome, cognome, genere, età, classe).
+Classi (nome classe, descrizione).
+Hobby (nome hobby, descrizione).
+Utenti per la gestione dell’autenticazione.
+Persistenza dei dati in un database MySQL (o altro database relazionale a scelta).
+Operazioni CRUD su studenti, classi e hobby.
+Interfaccia utente realizzata con Thymeleaf per la visualizzazione e gestione dei dati.
+Utilizzo di Lombok per semplificare la scrittura delle classi.
+Gestione del progetto con Maven e utilizzo di JDK 17 o superiore.
+Versionamento del codice su GitLab, con repository organizzato e documentato.
+Redazione di una documentazione tecnica dettagliata che descriva:
+La struttura del progetto.
+Il modello dati e le relazioni tra le entità.
+Le tecnologie utilizzate.
+Le istruzioni per l'installazione e l'esecuzione del progetto.
+L'esercizio sarà valutato sulla correttezza dell'implementazione, la struttura del codice, l'usabilità dell'interfaccia e la qualità della documentazione.
