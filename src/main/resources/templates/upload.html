@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"&gt;
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caricamento JSON</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"&gt;
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+<div class="card shadow-lg">
+<div class="card-header text-center bg-primary text-white">
+<h3>Carica il File JSON</h3>
+</div>
+<div class="card-body">
+
+<!-- Sezione per mostrare messaggi di successo o errore -->
+<div th:if="${message}" class="alert alert-info text-center" role="alert">
+<span th:text="${message}"></span>
+</div>
+
+<form action="/upload" method="post" enctype="multipart/form-data">
+<div class="mb-3">
+<label for="file" class="form-label">Seleziona un file JSON:</label>
+<input class="form-control" type="file" name="file" id="file" accept=".json" required>
+</div>
+<div class="text-center">
+<button type="submit" class="btn btn-success">Carica JSON</button>
+</div>
+</form>
+
+</div>
+</div>
+</div>
+
+<script>
+document.querySelector("form").addEventListener("submit", function() {
+let fileInput = document.getElementById("file");
+if (!fileInput.files.length) {
+alert("Seleziona un file JSON prima di procedere!");
+event.preventDefault();
+}
+});
+</script>
+
+</body>
+</html>
